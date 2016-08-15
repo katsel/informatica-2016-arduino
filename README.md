@@ -43,9 +43,9 @@ You can now control the brightness of your LED with the `MEIN_LED` value.
 ## Second example
 
 * See [example02/example02.ino](example02/example02.ino).
-* Verify and upload the code.
-* The LED will blink.
+  * Verify and upload the code.
+  * The LED will blink.
 
-* Bonus: [example02a/example02a.ino](example02a/example02a.ino)
+* Bonus: [example02a/example02a.ino](example02a/example02a.ino).
 The LED changes brightness each 500 ms and goes off for 1 second.
 
