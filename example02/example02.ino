@@ -1,4 +1,4 @@
-// lighting a LED on the board
+// make LED on the board blink
 
 #define  MEIN_LED  14
 void setup() {
@@ -11,7 +11,10 @@ void loop() {
   // put your main code here, to run repeatedly:
 
   // 0 - no current
-  // 255 - maximum current (according to the manual; actually it's 1024)
+  // 1024 - maximum current
 
+  analogWrite(MEIN_LED, 1024);
+  delay(500);
   analogWrite(MEIN_LED, 0);
+  delay(500);
 }
