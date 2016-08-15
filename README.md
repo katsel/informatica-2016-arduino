@@ -1,7 +1,8 @@
 # Mikrocontroller am Beispiel Arduino - oder Der twitternde Farn
 
 ## Introduction
-* We are using an [ESP8266](https://de.wikipedia.org/wiki/ESP8266) Microcontroller
+* We are using an [ESP8266](https://de.wikipedia.org/wiki/ESP8266) Microcontroller.
+![WeMos D1](wemos_d1.jpg)
 
 ## Installation
 
