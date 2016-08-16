@@ -135,3 +135,13 @@ The serial console of the Arduino IDE will display
     Accept: */*
 
 Our web server is working!
+
+## Eighth example: Website with two buttons
+
+* We now want a website with two buttons: `Lights on` / `Lights off`.
+  * Make a HTML form with `method="GET"`.
+  * Register the following URLs:
+    * `/` ... show form
+    * `/?LightsOn=on` ... show form, turn on light
+    * `/?LightsOff=off` ... show form, turn off light
+* See [example08/example08.ino](example08/example08.ino).
