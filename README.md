@@ -94,3 +94,11 @@ Make sure you pick the right board on `Tools -> Board: ...`)
     D8 (old rev) or D3 (new rev).
   * Reconnect the Arduino to the computer.
 * See [example06/example06.ino](example06/example06.ino).
+
+## Seventh example
+
+* See [example07/example07.ino](example07/example07.ino).
+  * Connect Arduino to a Wifi
+  * Arduino should output its IP address
+  * Ping Arduino from my notebook to test connectivity
+  * Start a web server on Arduino
