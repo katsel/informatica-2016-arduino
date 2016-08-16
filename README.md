@@ -2,7 +2,10 @@
 
 ## Introduction
 * We are using an [ESP8266](https://de.wikipedia.org/wiki/ESP8266) Microcontroller.
-![WeMos D1](wemos_d1.jpg)
+
+![WeMos D1: New and old revision](newrev-oldrev.jpg)
+
+(Pictured on top: new revision R2 and old revision of the WeMos D1)
 
 ## Installation
 
