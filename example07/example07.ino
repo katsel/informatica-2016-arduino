@@ -35,5 +35,6 @@ void loop() {
   Serial.println(request);
   // empty the message queue
   myClient.flush();
+  // send HTTP response to client
   myClient.print("HTTP/1.0\r\nContent-Type:text/plain\r\n\r\nGuckuck!\n");
 }
