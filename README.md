@@ -104,3 +104,15 @@ Make sure you pick the right board on `Tools -> Board: ...`)
   * Arduino should output its IP address
   * Ping Arduino from your computer to test connectivity
   * Start a web server on Arduino
+
+Open a command line and try to access the web server at the given URL
+
+    $ curl 10.42.0.130
+    Guckuck!
+
+The serial console of the Arduino IDE will display
+
+    GET / HTTP/1.1
+    Host: 10.42.0.130
+    User-Agent: curl/7.50.1
+    Accept: */*
