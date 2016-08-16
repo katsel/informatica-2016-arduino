@@ -60,3 +60,16 @@ Make sure you pick the right board on `Tools -> Board: ...`)
 * See [example03/example03.ino](example03/example03.ino).
  *  This program turns on the LED on the board when it's dark, and off when
     it's bright.
+
+## Fourth example
+
+* See [example04/example04.ino](example04/example04.ino).
+* Assemble the humidity sensor.
+* Disconnect the microcontroller from the computer (!).
+* Connect the humidity sensor curcuit board to the microcontroller
+  * VCC --> 3.3V
+  * GND --> GND
+  * AO (analog output) --> AO
+* Connect the controller to the computer again and put the sensor into the
+  flower pot.
+* You can now watch the humidity values of the flower pot and other things.
