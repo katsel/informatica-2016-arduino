@@ -62,6 +62,8 @@ Make sure you pick the right board on `Tools -> Board: ...`)
 * See [example03/example03.ino](example03/example03.ino).
   * This program turns on the LED on the board when it's dark, and off when
     it's bright.
+* Click the `Serial Monitor` icon on the upper right corner of the IDE to see
+  the output of the serial console of your Arduino.
 
 ## Fourth example: Humidity sensor setup
 
@@ -97,12 +99,26 @@ Make sure you pick the right board on `Tools -> Board: ...`)
   * Reconnect the Arduino to the computer.
 * See [example06/example06.ino](example06/example06.ino).
 
-## Seventh example: WiFi setup
+## Seventh example: WiFi setup and web server
 
 * See [example07/example07.ino](example07/example07.ino).
   * Connect Arduino to a WiFi
-  * Arduino should output its IP address
+  * Arduino should output its IP address:
+
+          I'm Arduino, trying to connect to the Wifi blubb blubb blubb blubb blubb \
+          blubb blubb blubb blubb blubb blubb blubb blubb blubb blubb blubb blubb \
+          blubb blubb blubb blubb blubb blubb successfully connected!
+          10.42.0.130
+
+
   * Ping Arduino from your computer to test connectivity
+
+          $ ping 10.42.0.130
+          PING 10.42.0.130 (10.42.0.130) 56(84) bytes of data.
+          64 bytes from 10.42.0.130: icmp_seq=1 ttl=128 time=23.8 ms
+          64 bytes from 10.42.0.130: icmp_seq=2 ttl=128 time=16.5 ms
+          64 bytes from 10.42.0.130: icmp_seq=3 ttl=128 time=11.8 ms
+
   * Start a web server on Arduino
 
 Open a command line and try to access the web server at the given URL
@@ -116,3 +132,5 @@ The serial console of the Arduino IDE will display
     Host: 10.42.0.130
     User-Agent: curl/7.50.1
     Accept: */*
+
+Our web server is working!
