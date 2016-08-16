@@ -1,8 +1,10 @@
 #include<ESP8266WiFi.h>  // WiFi functonality
+#define  MY_LED  14
 WiFiServer MyServer(80);  // HTTP server on port 80
 
 void setup() {
   // put your setup code here, to run once:
+  pinMode(MY_LED, OUTPUT);
   Serial.begin(9600);
   WiFi.mode(WIFI_STA);
   // ESSID + password of our WiFi
@@ -43,9 +45,11 @@ void loop() {
   if (questionmarkposition > -1) {
     if(request.startsWith("?LightsOn", questionmarkposition)) {
       Serial.println("Button LightsOn has been pressed");
+      analogWrite(MY_LED, 1024);
     }
     else if(request.startsWith("?LightsOff", questionmarkposition)) {
       Serial.println("Button LightsOff has been pressed");
+      analogWrite(MY_LED, 0);
     }
   }
 }
