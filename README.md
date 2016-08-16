@@ -85,7 +85,7 @@ Make sure you pick the right board on `Tools -> Board: ...`)
 * See [example05/example05.ino](example05/example05.ino).
 * The LED should blink for 5 seconds when it's too dry.
 
-## Sixth example: Add measurement interval to humidity sensor
+## Sixth example: Add measuring interval for humidity sensor
 
 * When you measure, there's electric current going through the sensor
   permanently.
@@ -103,7 +103,7 @@ Make sure you pick the right board on `Tools -> Board: ...`)
 
 * See [example07/example07.ino](example07/example07.ino).
   * Connect Arduino to a WiFi
-  * Arduino should output its IP address:
+  * Arduino should output its IP address to the serial console:
 
           I'm Arduino, trying to connect to the Wifi blubb blubb blubb blubb blubb \
           blubb blubb blubb blubb blubb blubb blubb blubb blubb blubb blubb blubb \
@@ -121,7 +121,8 @@ Make sure you pick the right board on `Tools -> Board: ...`)
 
   * Start a web server on Arduino
 
-Open a command line and try to access the web server at the given URL
+Using a command line/shell, try to access the Arduino web server at the given
+URL
 
     $ curl 10.42.0.130
     Guckuck!
