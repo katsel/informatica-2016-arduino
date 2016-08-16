@@ -52,3 +52,11 @@ You can now control the brightness of your LED with the `MEIN_LED` value.
 * Bonus: [example02a/example02a.ino](example02a/example02a.ino).
 The LED changes brightness each 500 ms and goes off for 1 second.
 
+## Third Example
+
+(You need a board with a light sensor to run this, e.g. Arduino Mega ADK.
+Make sure you pick the right board on `Tools -> Board: ...`)
+
+* See [example03/example03.ino](example03/example03.ino).
+ *  This program turns on the LED on the board when it's dark, and off when
+    it's bright.
