@@ -1,11 +1,13 @@
 # Mikrocontroller am Beispiel Arduino - oder Der twitternde Farn
 
 ## Introduction
-* We are using an [ESP8266](https://de.wikipedia.org/wiki/ESP8266) Microcontroller.
+* We are using an [ESP8266](https://de.wikipedia.org/wiki/ESP8266)
+  Microcontroller named **WeMos D1**.
+  It comes in two revisions.
 
 ![WeMos D1: New and old revision](newrev-oldrev.jpg)
 
-(Pictured on top: new revision R2 and old revision of the WeMos D1)
+(Pictured: new revision R2 on top and old revision below)
 
 ## Installation
 
@@ -22,7 +24,7 @@
   * On Linux: `sudo chmod o+rw /dev/ttyUSB0` to enable read/write to that port as a normal user.
   You have to do this each time you disconnect and reconnect the microcontroller.
 
-## First example
+## First example: Switch off a LED on the board
 
 The IDE shows two functions.
 `setup()` is run once at the beginning (used for assigning start values to variables etc.).
@@ -43,7 +45,7 @@ The LED labelled `SCK` goes off.
 
 You can now control the brightness of your LED with the `MEIN_LED` value.
 
-## Second example
+## Second example: Make the LED blink
 
 * See [example02/example02.ino](example02/example02.ino).
   * Verify and upload the code.
@@ -52,7 +54,7 @@ You can now control the brightness of your LED with the `MEIN_LED` value.
 * Bonus: [example02a/example02a.ino](example02a/example02a.ino).
 The LED changes brightness each 500 ms and goes off for 1 second.
 
-## Third Example
+## Third Example: Control the LED with a light sensor
 
 (You need a board with a light sensor to run this, e.g. Arduino Mega ADK.
 Make sure you pick the right board on `Tools -> Board: ...`)
@@ -61,7 +63,7 @@ Make sure you pick the right board on `Tools -> Board: ...`)
   * This program turns on the LED on the board when it's dark, and off when
     it's bright.
 
-## Fourth example
+## Fourth example: Humidity sensor setup
 
 * See [example04/example04.ino](example04/example04.ino).
 * Assemble the humidity sensor.
@@ -76,12 +78,12 @@ Make sure you pick the right board on `Tools -> Board: ...`)
   * The values range from 0 to ~1000.
   * High values mean it's dry, low values mean it's humid.
 
-## Fifth example
+## Fifth example: Control the LED with the humidity sensor
 
 * See [example05/example05.ino](example05/example05.ino).
 * The LED should blink for 5 seconds when it's too dry.
 
-## Sixth example
+## Sixth example: Add measurement interval to humidity sensor
 
 * When you measure, there's electric current going through the sensor
   permanently.
@@ -95,10 +97,10 @@ Make sure you pick the right board on `Tools -> Board: ...`)
   * Reconnect the Arduino to the computer.
 * See [example06/example06.ino](example06/example06.ino).
 
-## Seventh example
+## Seventh example: WiFi setup
 
 * See [example07/example07.ino](example07/example07.ino).
-  * Connect Arduino to a Wifi
+  * Connect Arduino to a WiFi
   * Arduino should output its IP address
-  * Ping Arduino from my notebook to test connectivity
+  * Ping Arduino from your computer to test connectivity
   * Start a web server on Arduino
