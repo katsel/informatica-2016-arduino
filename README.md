@@ -58,7 +58,7 @@ The LED changes brightness each 500 ms and goes off for 1 second.
 Make sure you pick the right board on `Tools -> Board: ...`)
 
 * See [example03/example03.ino](example03/example03.ino).
- *  This program turns on the LED on the board when it's dark, and off when
+  * This program turns on the LED on the board when it's dark, and off when
     it's bright.
 
 ## Fourth example
@@ -73,3 +73,10 @@ Make sure you pick the right board on `Tools -> Board: ...`)
 * Connect the controller to the computer again and put the sensor into the
   flower pot.
 * You can now watch the humidity values of the flower pot and other things.
+  * The values range from 0 to ~1000.
+  * High values mean it's dry, low values mean it's humid.
+
+## Fifth example
+
+* See [example05/example05.ino](example05/example05.ino).
+* The LED should blink for 5 seconds when it's too dry.
