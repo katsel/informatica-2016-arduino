@@ -80,3 +80,17 @@ Make sure you pick the right board on `Tools -> Board: ...`)
 
 * See [example05/example05.ino](example05/example05.ino).
 * The LED should blink for 5 seconds when it's too dry.
+
+## Sixth example
+
+* When you measure, there's electric current going through the sensor
+  permanently.
+  This decreases the lifetime of the sensor.
+* Our idea: Measure only once in a certain interval.
+* How do we achieve this? We measure only once every 1/5 second and switch off
+  the sensor in between (when it's not needed).
+  * Disconnect the Arduino from the computer.
+  * Take the wire connected to 3.3V on the microcontroller and connect it to
+    D8 (old rev) or D3 (new rev).
+  * Reconnect the Arduino to the computer.
+* See [example06/example06.ino](example06/example06.ino).
