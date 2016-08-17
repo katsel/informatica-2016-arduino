@@ -136,7 +136,7 @@ The serial console of the Arduino IDE will display
 
 Our web server is working!
 
-## Eighth example: Website with two buttons
+## Eighth example: Website with two buttons light switch
 
 * We now want a website with two buttons: `Lights on` / `Lights off`.
   * Make a HTML form with `method="GET"`.
@@ -145,3 +145,8 @@ Our web server is working!
     * `/?LightsOn=on` ... show form, turn on light
     * `/?LightsOff=off` ... show form, turn off light
 * See [example08/example08.ino](example08/example08.ino).
+
+## Ninth example: Website with light switch and humidity value
+
+* Display the humidity value below the buttons.
+* See [example09/example09.ino](example09/example09.ino).
