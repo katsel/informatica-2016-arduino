@@ -38,7 +38,11 @@ void loop() {
   // empty the message queue
   myClient.flush();
   // send HTTP response to client
-  myClient.print("HTTP/1.0\r\nContent-Type:text/html\r\n\r\n<html><head><title>Arduino light switch</title></head><body><form method=\"GET\"><input type=\"submit\" name=\"LightsOn\" value=\"on\" /><input type=\"submit\" name=\"LightsOff\" value=\"off\" /></form></body></html>\n");
+  myClient.print("HTTP/1.0\r\nContent-Type:text/html\r\n\r\n<html><head>"
+    "<title>Arduino light switch</title></head><body><form method=\"GET\">"
+    "<input type=\"submit\" name=\"LightsOn\" value=\"on\" />"
+    "<input type=\"submit\" name=\"LightsOff\" value=\"off\" /></form>"
+    "</body></html>\n");
   delay(100);
   int questionmarkposition=request.indexOf('?');
   Serial.println(questionmarkposition);
