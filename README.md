@@ -150,3 +150,39 @@ Our web server is working!
 
 * Display the humidity value below the buttons.
 * See [example09/example09.ino](example09/example09.ino).
+
+## Tenth example: IFTTT and Twitter
+
+* Register an account at [IFTTT maker](https://ifttt.com/maker).
+* How to trigger events: Remember the URL ("Make a POST or GET web request
+  to:").
+  This is the URL your Arduino has to call to make a Tweet.
+  It needs to be added to the [source code](example10/example10.ino).
+  Make sure to replace "https" with "http", as Arduino doesn't support SSL
+  encryption.
+* Go to [https://ifttt.com/twitter](https://ifttt.com/twitter) and click
+  "Connect".
+  Connect your Twitter account.
+* Then click "Create a new recipe".
+  We now need to set an if-condition or trigger.
+  Click the word "this" and type in "Maker".
+* "Receive a web request" will appear. Enter an event name such as
+  "Water the plants" or similar.
+  Then click the "Create trigger" button.
+* The if-condition is now set.
+  IFTTT will trigger an action every time it receives a HTTP request from the
+  Arduino.
+  Now let's define that action - tell IFTTT to Tweet for us.
+* The then-condition has to be linked to Twitter.
+  Click "that", type in "Twitter" and pick "Post a Tweet".
+* Enter a Tweet message you like.
+  We can add values of parameters, so we know what's going on with the humidity
+  sensor.
+  Values can be specified with two curly braces like "{{Value1}}"
+  (capitalised V is important here).
+    * Note that in the [Arduino source code](example10/example10.ino), the
+      current humidity value gets appended to the URL as a parameter
+      (like `?value1=`).
+      This value is going to be displayed in the Tweet.
+* Then click "Create action" and "Create recipe".
+* Done!
