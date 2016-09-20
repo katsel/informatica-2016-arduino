@@ -74,8 +74,15 @@ Make sure you pick the right board on `Tools -> Board: ...`)
   * VCC --> 3.3V
   * GND --> GND
   * AO (analog output) --> AO
+
+![Wiring the sensor](wiring_sensor.jpg)
+![Wiring the board](wiring_board.jpg)
+
 * Connect the controller to the computer again and put the sensor into the
   flower pot.
+
+![Arduino with sensor](assembled.jpg)
+
 * You can now watch the humidity values of the flower pot and other things.
   * The values range from 0 to ~1000.
   * High values mean it's dry, low values mean it's humid.
@@ -156,10 +163,10 @@ Our web server is working!
 * Register an account at [IFTTT maker](https://ifttt.com/maker).
 * How to trigger events: Remember the URL ("Make a POST or GET web request
   to:").
-  This is the URL your Arduino has to call to make a Tweet.
-  It needs to be added to the [source code](example10/example10.ino).
+  Your Arduino has to call this URL to make a Tweet.
+  It needs to be added to the [source code](example10/example10.ino#L40).
   Make sure to replace "https" with "http", as Arduino doesn't support SSL
-  encryption.
+  encryption out-of-the-box.
 * Go to [https://ifttt.com/twitter](https://ifttt.com/twitter) and click
   "Connect".
   Connect your Twitter account.
