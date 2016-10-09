@@ -160,6 +160,7 @@ Our web server is working!
 
 ## Tenth example: IFTTT and Twitter
 
+* The source code is at [example10/example10.ino](example10/example10.ino).
 * Register an account at [IFTTT maker](https://ifttt.com/maker).
 * How to trigger events: Remember the URL ("Make a POST or GET web request
   to:").
@@ -187,7 +188,7 @@ Our web server is working!
   sensor.
   Values can be specified with two curly braces like "{{Value1}}"
   (capitalised V is important here).
-    * Note that in the [Arduino source code](example10/example10.ino), the
+    * Note that in the [Arduino source code](example10/example10.ino#L41), the
       current humidity value gets appended to the URL as a parameter
       (like `?value1=`).
       This value is going to be displayed in the Tweet.
